@@ -1,0 +1,437 @@
+@import url(reset.css);
+
+html {
+  /* フォントサイズ基準を10pxにする */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji"; 
+  font-size: 1.5rem;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.7rem;
+  font-weight: 420;
+  letter-spacing: 1.2rem;
+  margin: 8px 0;
+}
+
+/* ヘッダー */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+}
+
+.head_inner {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  margin: 0 20px 0 90px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0 2.5rem;
+}
+
+li.header_title {
+  margin: 0 2rem;
+}
+
+.inquiry {
+  background-color: #000;
+  position: absolute;
+  color: #f0f0f0;
+  right: 0;
+  font-size: 1rem;
+  line-height: 80px;
+  width: 15%;
+  text-align: center;
+}
+
+
+header .inquiry p {
+  color: #f0f0f0;
+}
+
+.inquiry:hover {
+  background-color: #333333;
+}
+
+/* メイン */
+/* メイン画像 */
+.main_visual img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+/* ニュース */
+#news_wrapper {
+  max-width: 1000px;
+  margin: 110px auto;
+}
+
+.pickup_box {
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  align-items: center;
+}
+
+h2.jp {
+  position: relative;
+  margin-bottom: 85px;
+}
+
+h2.jp::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -30px;/*線の上下位置*/
+  width: 43px;/*線の長さ*/
+  height: 1px;/*線の太さ*/
+  background-color: black;/*線の色*/
+}
+
+.pickup_item {
+  width: calc(100%/3);
+}
+
+.pickup_item:nth-child(1) {
+  padding: 7px 0 7px 0;
+}
+
+.pickup_item:nth-child(2) {
+  border-right: 1px solid #000; 
+  border-left: 1px solid #000; 
+  padding: 7px 0 7px 20px;
+}
+
+.pickup_item:nth-child(3) {
+  padding: 7px 0 7px 20px;
+}
+
+.pickup_item p {
+  margin-bottom: 25px;
+}
+
+.pickup_item p span {
+  margin: 0 15px;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7px 6px;
+}
+
+/* 私たちについて ABOUT */
+#about_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.about_image {
+  width: 55%;
+}
+.about_image img {
+  width: 100%;
+  height: 400px;
+}
+
+.about_box {
+  width: 45%;
+  padding: 160px 15px 65px 48px;
+}
+
+.about_box p {
+  line-height: 2.7rem;
+}
+
+/* 事業内容 BUSINESS */
+#business_wrapper {
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.business_image_box {
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.business_image_group {
+  max-width: 342px;
+  margin: 0 auto 40px;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+.business_image {
+  width: 100%;
+  height: auto;
+}
+
+.left_box {
+  margin-top: 90px;
+  width: 50%;
+}
+
+.right_box {
+  margin-bottom: 90px;
+  width: 50%;
+}
+
+/* 会社情報 COMPANY */
+#company_wrapper {
+  position: relative;
+  max-width: 1000px;
+  height: 700px;
+  margin: 0 auto 70px;
+  display: flex;
+}
+
+.company_group {
+  background-color: #fff;
+  width: 60%;
+  height: 600px;
+  padding: 100px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+table {
+  line-height: 3rem;
+}
+
+td {
+  font-size: 1.3rem;
+}
+
+table td.data_b {
+  padding-left: 1rem;
+}
+
+.company_image {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 40;
+}
+
+.company_image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* フッター */
+footer {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+#footer_wrapper {
+  overflow: hidden;
+  padding: 0 16px;
+
+}
+
+.footer_box {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 0;
+  margin: 0 auto;
+}
+
+.footer_address p {
+  font-size: 1.8rem;
+}
+
+.copyright {
+  max-width: 1000px;
+  margin: 0 auto 24px;  
+
+}
+
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 900px) {
+
+  body {
+    margin: 0;
+  }
+
+  /* ヘッダー */
+
+  .head_inner {
+    display: block;
+    margin-left: 16px;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+
+  li.header_title:first-child {
+    margin-left: 0;
+  }
+
+  li.header_title:last-child {
+    margin-right: 0;
+  }
+
+  .inquiry {
+    display: none;
+  }
+
+  .main_visual {
+    margin-bottom: 72px;
+  }
+
+  /*   メイン   */
+
+  .main_visual img {
+    height: calc(100vh - 80px);
+    object-fit: cover;
+  }
+
+
+  /* NEWS */
+  #news_wrapper {
+    display: block;
+    margin: 0 33px 72px;
+  }
+
+  .pickup_box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pickup_item {
+    width: 100%;
+    margin: 0 auto 33px ;
+  }
+
+
+  .pickup_item:nth-child(2) {
+    border-right: 0; 
+    border-left: 0; 
+    padding: 7px 0; 
+  }
+
+  .pickup_item:nth-child(3) {
+    padding: 7px 0;
+  }
+
+  /* ABOUT */
+  #about_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .about_image {
+    width: 100%;
+  }
+  
+  .about_image img {
+    height: 300px;
+    margin-bottom: 72px;
+  }
+
+  .about_box {
+    width: 100%;
+    padding: 0;
+    margin: 0 33px 72px;
+  }
+
+  /* BUSINESS */
+  #business_wrapper {
+    flex-wrap: wrap;
+    margin: 0 33px 72px;
+  }
+
+  .business_box {
+    margin-left: 0;
+  }
+
+  .business_image_box {
+    flex-direction: column;
+  }
+
+  .business_image_group {
+    max-width: 100%;
+  }
+
+  .left_box {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .right_box {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* COMPANY */
+  #company_wrapper {
+    margin: 0 33px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .company_group {
+    width: 100%;
+    height: auto;
+    padding: 35px 20px;
+    position: static;
+  }
+
+  .company_image {
+    width: 100%;
+    padding: 0;
+    position: static;
+    margin-top: 25px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+
+  /* フッター */
+  #footer_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer_box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 85px 0 85px 33px;
+  }
+
+  .copyright {
+    margin: 0 0 45px 33px;
+  }
+
+}
+
